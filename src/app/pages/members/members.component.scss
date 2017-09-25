@@ -1,0 +1,77 @@
+:host /deep/ {
+    .container {
+        .affix-top {
+            position: fixed;
+            top: 0;
+        }
+        .affix-bottom {
+            position: fixed;
+            top: 50px;
+        }
+        ul.menu {
+            font-size: 14px;
+            color: #8f8f8f;
+            padding-top: 100px;
+            margin-top: 0;
+            li {
+                line-height: 16px;
+                a {
+                    display: block;
+                    padding: 4px 20px;
+                    color: #8f8f8f;
+                    font-weight: 300;
+                    background-color: transparent; //
+                    &:hover {
+                        padding-left: 19px;
+                        color: #0363AF;
+                        text-decoration: none;
+                        background-color: transparent;
+                        border-left: 1px solid #0363AF;
+                    }
+                }
+                >ul.menu {
+                    display: none;
+                    padding-top: 2px;
+                    margin-top: 0;
+                    >li {
+                        margin-bottom: 2px;
+                        >a {
+                            padding-top: 1px;
+                            padding-bottom: 1px;
+                            padding-left: 30px;
+                            font-size: 12px;
+                            text-decoration: none;
+                            &:hover {
+                                padding-left: 29px;
+                            }
+                        }
+                        &.active>a {
+                            padding-left: 28px;
+                        }
+                    }
+                }
+                &.active {
+                    margin-bottom: 3px;
+                    >ul.menu {
+                        display: block;
+                    }
+                    >a {
+                        padding-left: 18px;
+                        font-weight: 500;
+                        color: #0363AF;
+                        background-color: transparent;
+                        border-left: 2px solid #0363AF;
+                    }
+                }
+            }
+            a.back-to-top {
+                padding: 4px 10px;
+                margin-top: 10px;
+                margin-left: 10px;
+                font-size: 12px;
+                font-weight: 300;
+                color: #999;
+            }
+        }
+    }
+}

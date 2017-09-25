@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'scdm-root',
   template: `
     <scdm-header></scdm-header>
-    <router-outlet></router-outlet>
+    <router-outlet scrollSpy></router-outlet>
     <scdm-footer></scdm-footer>
 `,
 })
