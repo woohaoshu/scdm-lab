@@ -11,10 +11,18 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    var winHeight = $(window).height();
+    $('.carousel-inner').css('height',winHeight);
+    //var navbar = document.getElementById("navbar");
+    var nh = winHeight-50;
+    // 窗口大小变化时
+    $(window).resize(()=>{
+      winHeight = $(window).height();
+      nh = winHeight-50;
+      $('.carousel-inner').css('height',winHeight);
+    });
     $('.carousel').carousel();
-    
-    var navbar = document.getElementById("navbar");
-    var nh = 650;
+    // 窗口滚动时
     window.onscroll = function() {
         var s = document.body.scrollTop || document.documentElement.scrollTop;
         if (s > nh) {

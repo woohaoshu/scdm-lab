@@ -12,4 +12,10 @@ export class MembersComponent implements OnInit {
   ngOnInit() {
   }
 
+  public goTo(anchor: string) {
+    setTimeout(() => {
+      (<any>document).querySelector('#' + anchor).scrollIntoView();
+    });
+  }
+
 }

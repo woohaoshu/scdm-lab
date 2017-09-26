@@ -65,8 +65,9 @@ body {
 }
 
 .carousel-inner>.item {
-    width: auto;
-    max-height: 700px;
+    height: 100%;
+    background-color: #000;
+    background-size: cover;
 }
 
 
