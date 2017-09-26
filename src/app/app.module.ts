@@ -18,7 +18,7 @@ import { PagesModule } from './pages/pages.module'
     PagesModule,
     ScrollSpyModule.forRoot(),
   ],
-  providers: [ScrollSpyService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

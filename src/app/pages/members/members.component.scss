@@ -6,7 +6,7 @@
         }
         .affix-bottom {
             position: fixed;
-            top: 50px;
+            top: 75px; //修改
         }
         ul.menu {
             font-size: 14px;
@@ -20,7 +20,7 @@
                     padding: 4px 20px;
                     color: #8f8f8f;
                     font-weight: 300;
-                    background-color: transparent; //
+                    background-color: transparent; //修改
                     &:hover {
                         padding-left: 19px;
                         color: #0363AF;
