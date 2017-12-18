@@ -1,0 +1,2 @@
+运行项目	npm run start == ng serve -o	（-o 启动Index页面）
+		ng serve --host 0.0.0.0 --port 4201 -o （指定端口4201）

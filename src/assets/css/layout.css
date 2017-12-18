@@ -1311,3 +1311,16 @@ fieldset[disabled] .btn-theme {
     display: inline-block;
     margin: 30px 0 30px 0;
 }
+
+
+/*--------------------------------------------------
+    [Added by Woo]
+----------------------------------------------------*/
+
+#scdm-logo>a>img {
+    width: 350px;
+}
+
+.footer-logo {
+    width: 350px;
+}
