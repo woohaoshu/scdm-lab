@@ -1,8 +1,8 @@
-<div id="members-page" class="content-md container">
+<div id="members-page" class="content container">
     <div class="row">
         <div class="col-xs-10" role="main">
 
-            <h1>SCDM 成员</h1>
+            <h2>SCDM 成员</h2>
 
             <div class="main" [scrollSpyIndex]="{id: 'manager', selector: 'anchor'}">
                 <!-- 负责人 -->
@@ -73,7 +73,7 @@
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="bg-color-white margin-b-20">
                             <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/01.jpg" alt="Team Image">
+                                <img class="img-responsive" src="assets/images/770x860/LiW.jpg" alt="Team Image">
                             </div>
                         </div>
                         <h4><a href="#">李旺</a> <span class="text-uppercase margin-l-20">2015</span></h4>
@@ -142,7 +142,7 @@
                             </div>
                         </div>
                         <h4><a href="#">吴浩</a> <span class="text-uppercase margin-l-20">2017</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                        <p>1995年8月生，本科就读于上海大学，兴趣：设计美学、Web前端、游泳</p>
                         <a class="link" href="#">Read More</a>
                     </div>
                     <!-- End Team -->
@@ -204,7 +204,8 @@
 
         </div>
         <div class="col-xs-2" role="complementary">
-            <scrollSpy-index-render [scrollSpyIndexRenderOptions]="{id: 'manager', spyId: 'window', topMargin: affixTopMargin+60}" [scrollSpyAffix]="{topMargin: affixTopMargin}" class="hidden-print hidden-xs hidden-sm">
+            <!-- topMargin调整滚动比率 -->
+            <scrollSpy-index-render [scrollSpyIndexRenderOptions]="{id: 'manager', spyId: 'window', topMargin: affixTopMargin+40}" [scrollSpyAffix]="{topMargin: affixTopMargin}" class="hidden-print hidden-xs hidden-sm">
             </scrollSpy-index-render>
         </div>
     </div>

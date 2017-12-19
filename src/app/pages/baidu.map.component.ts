@@ -54,11 +54,11 @@ export class BaiduMapComponent implements OnInit {
     }
 
     loadMap(e: any) {
-        console.log(e);//e here is the instance of BMap.Map
+        //console.log(e);//e here is the instance of BMap.Map
     }
 
     clickMarker(marker: any){
-        console.log('The clicked marker is', marker.getPosition());
+        //console.log('The clicked marker is', marker.getPosition());
     }
 
 }

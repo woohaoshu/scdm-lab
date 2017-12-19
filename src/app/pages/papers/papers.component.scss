@@ -6,13 +6,14 @@
         }
         .affix-bottom {
             position: fixed;
-            top: 75px; //修改
+            top: 90px; //修改固定后的位置
         }
         ul.menu {
             font-size: 14px;
             color: #8f8f8f;
-            padding-top: 100px;
+            padding-top: 160px; //修改相对文档高度
             margin-top: 0;
+            width: 200px; //使scrollSpy足够宽
             li {
                 line-height: 16px;
                 a {
@@ -73,6 +74,7 @@
                 color: #999;
             }
         }
+        // my scss
         .main {
             h2,
             h3 {

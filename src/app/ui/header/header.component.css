@@ -142,3 +142,7 @@ button.navbar-toggle>span.icon-bar {
 .nav>li>a:hover {
     background-color: transparent;
 } */
+
+#placeholder {
+    height: 50px;
+}

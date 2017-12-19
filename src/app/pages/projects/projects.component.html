@@ -1,8 +1,8 @@
-<div id="projects-page" class="content-md container">
+<div id="projects-page" class="content container">
     <div class="row">
         <div class="col-xs-10" role="main">
 
-            <h1>SCDM 项目</h1>
+            <h2>SCDM 项目</h2>
 
             <div class="main" [scrollSpyIndex]="{id: 'manager', selector: 'anchor'}">
                 <!-- 科研项目 -->
@@ -75,7 +75,8 @@
 
         </div>
         <div class="col-xs-2" role="complementary">
-            <scrollSpy-index-render [scrollSpyIndexRenderOptions]="{id: 'manager', spyId: 'window', topMargin: affixTopMargin+60}" [scrollSpyAffix]="{topMargin: affixTopMargin}" class="hidden-print hidden-xs hidden-sm">
+            <!-- topMargin调整滚动比率 -->
+            <scrollSpy-index-render [scrollSpyIndexRenderOptions]="{id: 'manager', spyId: 'window', topMargin: affixTopMargin+40}" [scrollSpyAffix]="{topMargin: affixTopMargin}" class="hidden-print hidden-xs hidden-sm">
             </scrollSpy-index-render>
         </div>
     </div>

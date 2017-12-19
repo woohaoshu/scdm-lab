@@ -34,6 +34,17 @@ export class HeaderComponent implements OnInit {
             //navbar.className = "navbar navbar-static-top";
         };
     };
+
+    //将navbar滚动到顶部
+    var scrollPos = $('#navScrollTop').offset().top;
+    var scroll_pos_duration = 700;
+    $('nav.navbar a').click(function () {
+      $('body,html').animate({
+        scrollTop: scrollPos,
+      }, scroll_pos_duration
+      );
+    })
+    
   }
 
 }
