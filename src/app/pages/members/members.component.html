@@ -9,196 +9,100 @@
                 <div class="divider"></div>
                 <h2 id="manager" class="anchor">负责人</h2>
                 <div class="row">
-                    <div class="col-sm-7 sm-margin-b-50">
-                        <h4>邹国兵 <small> 博士，副教授，博士生副导师，硕士生导师</small></h4>
-                        <p>中国计算机学会（CCF）会员、ACM会员、CCF服务计算专委会委员、CCF YOCSEF上海委员、上海计算机学会会员、上海计算机学会人工智能专委会学术秘书。</p>
-                        <p>2012年毕业于同济大学，获计算机应用技术专业博士学位。2009年10月-2011年10月，曾作为国家公派留学人员， 在美国华盛顿大学（Washington University in St. Louis）计算机科学与工程系，从事两年科研学习工作。2012年8月起，进入上海大学计算机工程与科学学院从事科研与教学工作，组建了服务计算与数据挖掘实验室。</p>
-                    </div>
-                    <div class="col-sm-4 col-sm-offset-1">
-                        <img class="img-responsive" src="assets/images/770x860/ZouGB.jpg" style="max-height:250px;">
+                    <div *ngFor="let member of members">
+                        <div *ngIf="member.degree == 0">
+                            <div class="col-sm-7 sm-margin-b-50">
+                                <h4>{{member.name}} <small> {{member.note}}</small></h4>
+                                <p>中国计算机学会（CCF）会员、ACM会员、CCF服务计算专委会委员、CCF YOCSEF上海委员、上海计算机学会会员、上海计算机学会人工智能专委会学术秘书。</p>
+                                <p>2012年毕业于同济大学，获计算机应用技术专业博士学位。2009年10月-2011年10月，曾作为国家公派留学人员， 在美国华盛顿大学（Washington University in St. Louis）计算机科学与工程系，从事两年科研学习工作。2012年8月起，进入上海大学计算机工程与科学学院从事科研与教学工作，组建了服务计算与数据挖掘实验室。</p>
+                                <a class="link" href="http://my.shu.edu.cn/Index.aspx?TID=4197" target="_blank">Read More</a>
+                            </div>
+                            <div class="col-sm-4 col-sm-offset-1">
+                                <img class="img-responsive" [src]="member.photoUrl" style="max-height:250px;">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--// end row -->
-                <!-- 博士生 -->
+                <!-- 博士 -->
                 <div class="divider"></div>
                 <h2 id="phd" class="anchor">博士生</h2>
                 <p>（按年级、拼音排序）</p>
                 <div class="row">
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/01.jpg" alt="Team Image">
+                    <div *ngFor="let member of members">
+                        <div *ngIf="member.degree == 1">
+                            <div class="col-sm-4 sm-margin-b-50 memberBox">
+                                <div class="bg-color-white margin-b-20">
+                                    <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                        <img class="img-responsive" [src]="member.photoUrl" alt="Team Image">
+                                    </div>
+                                </div>
+                                <h4><a href="">{{member.name}}</a> <span class="text-uppercase margin-l-20">{{member.grade}}</span></h4>
+                                <p class="memberIntro">{{member.intro}}</p>
+                                <a class="link" href="">Read More</a>
                             </div>
                         </div>
-                        <h4><a href="#">牛森</a> <span class="text-uppercase margin-l-20">2013</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
                     </div>
-                    <!-- End Team -->
-
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/02.jpg" alt="Team Image">
-                            </div>
-                        </div>
-                        <h4><a href="#">黄明清</a> <span class="text-uppercase margin-l-20">2012</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
-                    </div>
-                    <!-- End Team -->
-
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/03.jpg" alt="Team Image">
-                            </div>
-                        </div>
-                        <h4><a href="#">Farhan Ullah</a> <span class="text-uppercase margin-l-20">2016</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
-                    </div>
-                    <!-- End Team -->
                 </div>
-                <!--// end row -->
-                <!-- 硕士生 -->
+                <!--// End 博士 -->
+                <!-- 硕士 -->
                 <div class="divider"></div>
                 <h2 id="master" class="anchor">硕士生</h2>
                 <p>（按年级、拼音排序）</p>
                 <div class="row">
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/LiW.jpg" alt="Team Image">
+                    <div *ngFor="let member of members">
+                        <div *ngIf="member.degree == 2">
+                            <div class="col-sm-4 sm-margin-b-50 memberBox">
+                                <div class="bg-color-white margin-b-20">
+                                    <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                        <img class="img-responsive" [src]="member.photoUrl" alt="Team Image">
+                                    </div>
+                                </div>
+                                <h4><a href="">{{member.name}}</a> <span class="text-uppercase margin-l-20">{{member.grade}}</span></h4>
+                                <p class="memberIntro">{{member.intro}}</p>
+                                <a class="link" href="">Read More</a>
                             </div>
                         </div>
-                        <h4><a href="#">李旺</a> <span class="text-uppercase margin-l-20">2015</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
                     </div>
-                    <!-- End Team -->
-
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/02.jpg" alt="Team Image">
-                            </div>
-                        </div>
-                        <h4><a href="#">庞盛业</a> <span class="text-uppercase margin-l-20">2016</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
-                    </div>
-                    <!-- End Team -->
-
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/03.jpg" alt="Team Image">
-                            </div>
-                        </div>
-                        <h4><a href="#">张霞</a> <span class="text-uppercase margin-l-20">2016</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
-                    </div>
-                    <!-- End Team -->
-
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/02.jpg" alt="Team Image">
-                            </div>
-                        </div>
-                        <h4><a href="#">向阳</a> <span class="text-uppercase margin-l-20">2016</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
-                    </div>
-                    <!-- End Team -->
-
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/02.jpg" alt="Team Image">
-                            </div>
-                        </div>
-                        <h4><a href="#">蒋明</a> <span class="text-uppercase margin-l-20">2017</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
-                    </div>
-                    <!-- End Team -->
-
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/WuH.jpg" alt="Team Image">
-                            </div>
-                        </div>
-                        <h4><a href="#">吴浩</a> <span class="text-uppercase margin-l-20">2017</span></h4>
-                        <p>1995年8月生，本科就读于上海大学，兴趣：设计美学、Web前端、游泳</p>
-                        <a class="link" href="#">Read More</a>
-                    </div>
-                    <!-- End Team -->
-
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/ChenJ.jpg" alt="Team Image">
-                            </div>
-                        </div>
-                        <h4><a href="#">陈锦</a> <span class="text-uppercase margin-l-20">2018</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
-                    </div>
-                    <!-- End Team -->
                 </div>
-                <!--// end row -->
+                <!--// End 硕士 -->
                 <!-- 本科生 -->
                 <div class="divider"></div>
                 <h2 id="undergraduate" class="anchor">本科生</h2>
                 <p>（按年级、拼音排序）</p>
                 <div class="row">
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/01.jpg" alt="Team Image">
-                            </div>
+                    <div class="col-sm-12 sm-margin-b-50" *ngFor="let member of members">
+                        <div *ngIf="member.degree == 3">
+                            <h4>
+                                <div class="inlineName">{{member.name}}</div>
+                                <span class="text-uppercase margin-l-20">{{member.grade}}</span>
+                            </h4>
+                            <p class="inlineIntro">{{member.intro}}</p>
                         </div>
-                        <h4><a href="#">Alicia Keys</a> <span class="text-uppercase margin-l-20">Project Manager</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
                     </div>
-                    <!-- End Team -->
                 </div>
-                <!--// end row -->
+                <!--// end 本科生 -->
                 <!-- 合作者 -->
                 <div class="divider"></div>
                 <h2 id="cooperator" class="anchor">合作者</h2>
                 <p>（按拼音排序）</p>
                 <div class="row">
-                    <!-- Team -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="bg-color-white margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="assets/images/770x860/01.jpg" alt="Team Image">
+                    <div *ngFor="let member of members">
+                        <div *ngIf="member.degree == 4">
+                            <div class="col-sm-4 sm-margin-b-50 memberBox">
+                                <div class="bg-color-white margin-b-20">
+                                    <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                        <img class="img-responsive" [src]="member.photoUrl" alt="Team Image">
+                                    </div>
+                                </div>
+                                <h4><a href="">{{member.name}}</a> <span class="text-uppercase margin-l-20">{{member.note}}</span></h4>
+                                <p class="memberIntro">{{member.intro}}</p>
+                                <a class="link" href="">Read More</a>
                             </div>
                         </div>
-                        <h4><a href="#">甘杨兰</a> <span class="text-uppercase margin-l-20">东华大学</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
                     </div>
-                    <!-- End Team -->
                 </div>
-                <!--// end row -->
+                <!--// end 合作者 -->
             </div>
 
 

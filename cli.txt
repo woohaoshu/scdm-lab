@@ -2,6 +2,7 @@
 		ng serve --host 0.0.0.0 --port 4201 -o （指定端口4201）
 复制到centos	pscp -P 443 G:\angular\scdm\dist\scdm.zip shuwsc@dmis.shu.edu.cn:/home/shuwsc
 复制到ubuntu17	scp scdm.zip ubuntu17:/home/shuwsc
-复制到http目录	sudo mv scdm.zip /var/www/html/
+清空http目录	sudo rm -rf /var/www/html/*
+复制到http目录	sudo cp scdm.zip /var/www/html/
 unzip解压	sudo unzip scdm.zip
 重启nginx	sudo systemctl reload nginx

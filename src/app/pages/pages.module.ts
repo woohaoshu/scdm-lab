@@ -6,11 +6,11 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { ScrollSpyIndexModule } from 'ngx-scrollspy/dist/plugin'
 import { ScrollSpyAffixModule } from 'ngx-scrollspy/dist/plugin/affix'
 
-
 //import BaiduMapModule
 import { BaiduMapModule } from 'angular2-baidu-map';
 import { BaiduMapComponent } from './baidu.map.component';
 
+//import page components
 import { HomeComponent } from './home/home.component';
 import { MembersComponent } from './members/members.component';
 import { PapersComponent } from './papers/papers.component';
