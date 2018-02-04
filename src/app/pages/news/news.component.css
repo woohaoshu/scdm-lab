@@ -1,3 +1,8 @@
 .blockquote:before {
     left: -50px;
 }
+
+.swiper-slide {
+    border-left: 8px solid #a6a7aa;
+    padding-left: 15px;
+}

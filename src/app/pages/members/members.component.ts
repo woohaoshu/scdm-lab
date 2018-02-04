@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Member } from './member'
-import { MemberService } from './member.service'
+import { Member } from './member';
+import { MemberService } from './member.service';
 
 declare var $: any; //使用jQuery
 
@@ -30,11 +30,11 @@ export class MembersComponent implements OnInit {
     this.getMembers();
   }
 
-  //affix
-  public goTo(anchor: string) {
-    setTimeout(() => {
-      (<any>document).querySelector('#' + anchor).scrollIntoView();
-    });
-  }
+  // //affix
+  // public goTo(anchor: string) {
+  //   setTimeout(() => {
+  //     (<any>document).querySelector('#' + anchor).scrollIntoView();
+  //   });
+  // }
 
 }
