@@ -20,6 +20,9 @@ import { NewsComponent } from './news/news.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ContactComponent } from './contact/contact.component';
 
+//pipe
+import { MeetingDocPipe } from '../util/meeting-doc.pipe';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -37,7 +40,8 @@ import { ContactComponent } from './contact/contact.component';
     NewsComponent, 
     PhotosComponent, 
     ContactComponent,
-    BaiduMapComponent
+    BaiduMapComponent,
+    MeetingDocPipe
   ]
 })
 export class PagesModule { }
