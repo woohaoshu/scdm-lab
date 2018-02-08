@@ -43,8 +43,12 @@ export class HeaderComponent implements OnInit {
         scrollTop: scrollPos,
       }, scroll_pos_duration
       );
-    })
+    });
     
+    //给手机屏幕下拉菜单添加点击缩回事件
+    $(".navbar-collapse").attr("onclick","$('.navbar-collapse').removeClass('in');");
+
   }
+
 
 }
