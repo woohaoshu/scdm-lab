@@ -4,16 +4,16 @@ export const MEMBERS: Member[] = [
     //负责人-0，博士-1，硕士-2，本科生-3，合作者-4
     { name:'邹国兵', degree:0, note:'博士，副教授，博士生副导师，硕士生导师', photoUrl:'assets/images/770x860/ZouGB.jpg', intro:''},
     //博士生
-    { name:'黄明清', degree:1, grade:2012, photoUrl:'assets/images/770x860/01.jpg', intro:'暂无'},
+    { name:'黄明清', degree:1, grade:2012, photoUrl:'assets/images/770x860/HuangMQ.jpg', intro:'暂无'},
     { name:'牛森', degree:1, grade:2013, photoUrl:'assets/images/770x860/01.jpg', intro:'暂无'},
     { name:'Farhan Ullah', degree:1, grade:2016, photoUrl:'assets/images/770x860/Farhan.jpg', intro:'暂无'},
     //硕士生
     { name:'李旺', degree:2, grade:2015, photoUrl:'assets/images/770x860/LiW.jpg', intro:'暂无'},
-    { name:'庞盛业', degree:2, grade:2016, photoUrl:'assets/images/770x860/PangSY.jpg', intro:'暂无'},
+    { name:'庞盛业', degree:2, grade:2016, photoUrl:'assets/images/770x860/PangSY.jpg', intro:'1993-10，本科就读于同济大学。对人工智能，机器学习感兴趣，爱好各种体育运动。目前研究方向为Web服务分类。'},
     { name:'向阳', degree:2, grade:2016, photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
-    { name:'张霞', degree:2, grade:2016, photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
+    { name:'张霞', degree:2, grade:2016, photoUrl:'assets/images/770x860/02.jpg', intro:'1994-5，本科就读于河海大学物联网专业。喜欢扬琴，萨克斯和素描。目前研究方向是多组学生物信息数据的差异化分析。'},
     { name:'蒋明', degree:2, grade:2017, photoUrl:'assets/images/770x860/JiangM.jpg', intro:'暂无'},
-    { name:'吴浩', degree:2, grade:2017, photoUrl:'assets/images/770x860/WuH.jpg', intro:'1995-8，本科就读于上海大学。对设计美学、Web前端、游泳感兴趣。目前研究方向为API服务聚类。'},
+    { name:'吴浩', degree:2, grade:2017, photoUrl:'assets/images/770x860/WuH.jpg', intro:'1995-8，本科就读于上海大学计算机专业。对设计美学、Web前端、游泳感兴趣。目前研究方向为API服务聚类。'},
     { name:'陈锦', degree:2, grade:2018, photoUrl:'assets/images/770x860/ChenJ.jpg', intro:'暂无'},
     //本科生
     { name:'陈想东', degree:3, grade:2014, intro:'目前在做本科毕业设计，题目为“基于协同过滤的服务推荐系统实现”'},
