@@ -17,7 +17,7 @@
                                         {{meeting.content}}
                                     </div>
                                 </blockquote>
-                                <p><a [href]="meeting.doc | meetingDoc">{{meeting.doc}}</a></p>
+                                <p><a [href]="meeting.doc | meetingDoc"><img [src]="meeting.doc | meetingDocImg" /> {{meeting.doc}}</a></p>
                                 <p><span class="fweight-700 color-link">{{meeting.date}}</span></p>
                             </div>
 

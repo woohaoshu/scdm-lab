@@ -22,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
 
 //pipe
 import { MeetingDocPipe } from '../util/meeting-doc.pipe';
+import { MeetingDocImgPipe } from '../util/meeting-doc-img.pipe';
 
 @NgModule({
   imports: [
@@ -41,7 +42,8 @@ import { MeetingDocPipe } from '../util/meeting-doc.pipe';
     PhotosComponent, 
     ContactComponent,
     BaiduMapComponent,
-    MeetingDocPipe
+    MeetingDocPipe,
+    MeetingDocImgPipe
   ]
 })
 export class PagesModule { }
