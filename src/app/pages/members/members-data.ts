@@ -5,13 +5,13 @@ export const MEMBERS: Member[] = [
     { name:'邹国兵', degree:0, note:'博士，副教授，博士生副导师，硕士生导师', photoUrl:'assets/images/770x860/ZouGB.jpg', intro:''},
     //博士生
     { name:'黄明清', degree:1, grade:2012, photoUrl:'assets/images/770x860/HuangMQ.jpg', intro:'1984-11，本科和硕士分别就读于河北工程大学和中国科学技术大学，曾于苏州捷泰科信息技术有限公司任职两年软件工程师。目前研究方向为社会计算和复杂网络。'},
-    { name:'牛森', degree:1, grade:2013, photoUrl:'assets/images/770x860/01.jpg', intro:'暂无'},
-    { name:'Farhan Ullah', degree:1, grade:2016, photoUrl:'assets/images/770x860/Farhan.jpg', intro:'暂无'},
+    { name:'牛森', degree:1, grade:2013, photoUrl:'assets/images/770x860/NiuS.jpg', intro:'13级博士研究生，当前的主要研究方向包括服务组合、不确定性QoS优化、自动规划、人工智能等。'},
+    { name:'Farhan Ullah', degree:1, grade:2016, photoUrl:'assets/images/770x860/Farhan.jpg', intro:'1990-2，Obtained his M.S. from Sarhad University of Science and Information Technology, Peshawar. Interested in service computing and data mining.'},
     //硕士生
-    { name:'李旺', degree:2, grade:2015, photoUrl:'assets/images/770x860/LiW.jpg', intro:'暂无'},
+    { name:'李旺', degree:2, grade:2015, photoUrl:'assets/images/770x860/LiW.jpg', intro:'1993-11，本科就读于上海大学计算机专业。目前研究Mashup推荐相关内容。'},
     { name:'庞盛业', degree:2, grade:2016, photoUrl:'assets/images/770x860/PangSY.jpg', intro:'1993-10，本科就读于同济大学。对人工智能，机器学习感兴趣，爱好各种体育运动。目前研究方向为Web服务分类。'},
     { name:'向阳', degree:2, grade:2016, photoUrl:'assets/images/770x860/XiangY.jpg', intro:'1994-6，本科就读于上海大学计算机专业。对分布式计算和Web开发感兴趣。目前研究方向是服务聚类。'},
-    { name:'张霞', degree:2, grade:2016, photoUrl:'assets/images/770x860/02.jpg', intro:'1994-5，本科就读于河海大学物联网专业。喜欢扬琴，萨克斯和素描。目前研究方向是多组学生物信息数据的差异化分析。'},
+    { name:'张霞', degree:2, grade:2016, photoUrl:'assets/images/770x860/ZhangX.jpg', intro:'1994-5，本科就读于河海大学物联网专业。喜欢扬琴，萨克斯和素描。目前研究方向是多组学生物信息数据的差异化分析。'},
     { name:'蒋明', degree:2, grade:2017, photoUrl:'assets/images/770x860/JiangM.jpg', intro:'1994-3， 本科就读于上海大学，擅长Web开发，现研究方向为服务推荐。平时爱好摄影，喜欢乒乓球，爱听纯音乐，推荐 river flows in you！'},
     { name:'吴浩', degree:2, grade:2017, photoUrl:'assets/images/770x860/WuH.jpg', intro:'1995-8，本科就读于上海大学计算机专业。对设计美学、Web前端、游泳感兴趣。目前研究方向为API服务聚类。'},
     { name:'陈锦', degree:2, grade:2018, photoUrl:'assets/images/770x860/ChenJ.jpg', intro:'1995-11，本科就读于福建师范大学网络工程专业。喜欢篮球、跑步。目前正在研究文本挖掘。'},
@@ -22,11 +22,15 @@ export const MEMBERS: Member[] = [
     { name:'韦健', degree:3, grade:2014, intro:'目前在做本科毕业设计，题目为“面向大规模生物数据的差异分析系统实现”'},
     { name:'赵万钰', degree:3, grade:2014, intro:'目前在做本科毕业设计，题目为“基于统计模型的Web服务聚类系统实现”'},
     //合作者
-    { name:'甘杨兰', degree:4, note:'东华大学', photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
+    { name:'Yixin Chen', degree:4, note:'Wash. U', photoUrl:'assets/images/770x860/ChenYX.jpg', intro:'Professor, Department of Computer Science and Engineering, Washington University in St. Louis.',introUrl:'http://www.cse.wustl.edu/~ychen/'},
+    { name:'张博锋', degree:4, note:'上海大学', photoUrl:'assets/images/770x860/ZhangBF.jpg', intro:'1999年12月起在上海大学任副教授，研究员，期间先后担任教研室主任、科研处处长助理，计算机学院院长助理，Sybase电子信息学院院长，网格技术重点研究室主任。',introUrl:'http://cms.shu.edu.cn/Default.aspx?tabid=16910'},
+    { name:'甘杨兰', degree:4, note:'东华大学', photoUrl:'assets/images/770x860/GanYL.jpg', intro:'1984-1，博士，副教授，博士生副导师，硕士生导师。2012年9月起，进入东华大学计算机科学与技术学院。',introUrl:'http://cst.dhu.edu.cn/62/c6/c3131a25286/page.htm'},
     //毕业生(图)
-    { name:'赵梅', degree:5, grade:2013, photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
-    { name:'周治明', degree:5, grade:2014, photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
+    { name:'赵梅', degree:7, grade:2013, photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
+    { name:'周治明', degree:7, grade:2014, photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
     //毕业生
+    { name:'赵梅', degree:6, grade:2013, intro:'硕士生（本科山东大学），独立指导'},
+    { name:'周治民', degree:6, grade:2014, intro:'硕士生（本科江南大学)，独立指导'},
     { name:'郑建兴', degree:6, grade:2015, intro:'博士生（山西大学工作），与张博锋老师合作指导'},
     { name:'张驰', degree:6, grade:2016, intro:'工程硕士生（本科上海大学)，独立指导'},
     { name:'蒋明', degree:6, grade:2017, intro:'本科生（上海大学读研），独立指导'},

@@ -9,3 +9,7 @@ CMD中
 进入http目录	cd /var/www/html/
 unzip解压	sudo unzip scdm.zip
 重启nginx	sudo systemctl reload nginx
+
+
+chatbot
+pscp -r G:\py-project\chatbot root@207.246.96.149:/root/

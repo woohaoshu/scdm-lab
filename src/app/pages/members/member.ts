@@ -4,5 +4,6 @@ export class Member {
     note?: string = null;       //来自于XX机构
     grade?: number = null;      //xx级
     photoUrl?: string = 'assets/images/770x860/02.jpg';   //照片相对路径
-    intro?: string = 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor';      //简介
+    intro?: string = '';      //简介
+    introUrl?: string = '';     //简介url
 }
