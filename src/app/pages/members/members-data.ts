@@ -27,10 +27,9 @@ export const MEMBERS: Member[] = [
     { name:'甘杨兰', degree:4, note:'东华大学', photoUrl:'assets/images/770x860/GanYL.jpg', intro:'1984-1，博士，副教授，博士生副导师，硕士生导师。2012年9月起，进入东华大学计算机科学与技术学院。',introUrl:'http://cst.dhu.edu.cn/62/c6/c3131a25286/page.htm'},
     //毕业生(图)
     { name:'赵梅', degree:7, grade:2013, photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
-    { name:'周治明', degree:7, grade:2014, photoUrl:'assets/images/770x860/02.jpg', intro:'暂无'},
+    { name:'周治明', degree:5, grade:2014, photoUrl:'assets/images/770x860/ZhouZM.jpg', intro:'1992年，研究方向为web服务推荐，2017年硕士毕业于上海大学，现就职于上海华为。'},
     //毕业生
     { name:'赵梅', degree:6, grade:2013, intro:'硕士生（本科山东大学），独立指导'},
-    { name:'周治民', degree:6, grade:2014, intro:'硕士生（本科江南大学)，独立指导'},
     { name:'郑建兴', degree:6, grade:2015, intro:'博士生（山西大学工作），与张博锋老师合作指导'},
     { name:'张驰', degree:6, grade:2016, intro:'工程硕士生（本科上海大学)，独立指导'},
     { name:'蒋明', degree:6, grade:2017, intro:'本科生（上海大学读研），独立指导'},
